@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#asteroids">Asteroids</a></li>
+                <li><a href="#music-visualizer">Music Visualizer</a></li>
+                <li><a href="#pong">Pong</a></li>
+                <li><a href="#tetris">Tetris</a></li>
+                <li><a href="test.html">Déconnexion</a></li>
+                <li><button id="dark-mode-toggle">Mode sombre</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="asteroids" class="project">
+            <h2>Asteroids</h2>
+            <p>Embarquez pour une aventure intergalactique dans "Asteroids", 
+                un jeu de style arcade classique créé à l'aide de la bibliothèque Raylib en C. 
+                Dans ce voyage palpitant à travers l'espace, 
+                prenez le contrôle d'un vaisseau spatial naviguant à travers un champ d'astéroïdes périlleux. 
+                Votre mission est de survivre le plus longtemps possible 
+                en détruisant les astéroïdes entrants et en évitant les collisions.</p>
+            <img src="./media/asteroids.gif" alt="Asteroids Gameplay"><br>
+            <button onclick="location.href='./projects/astroids/asteroids.html'">Exécution en direct</button>
+        </section>
+
+        <section id="music-visualizer" class="project">
+            <h2>Music Visualizer</h2>
+            <p>Découvrez la magie de la musique avec le "Music Visualizer", 
+                un outil envoûtant construit avec C et Raylib. 
+                Plongez-vous dans un voyage audio-visuel captivant alors que vos morceaux préférés 
+                prennent vie avec des couleurs vibrantes et des motifs dynamiques.</p>
+            <img src="./media/musi.gif" alt="Music Visualizer Showcase"><br>
+            <button onclick="location.href='./projects/musi/musi.html'">Exécution en direct</button>
+        </section>
+
+        <section id="pong" class="project">
+            <h2>Pong</h2>
+            <p>Bienvenue dans "Pong", 
+                un jeu classique de ping-pong virtuel donnant vie avec C et Raylib. 
+                Plongez dans une compétition palpitante contre un ami dans des duels multijoueurs en tête-à-tête.</p>
+            <img src="./media/pong.gif" alt="Pong Gameplay"><br>
+            <button onclick="location.href='./projects/pong/pong.html'">Exécution en direct</button>
+        </section>
+
+        <section id="tetris" class="project">
+            <h2>Tetris</h2>
+            <p>Préparez-vous à une expérience de résolution de casse-tête addictive avec "Tetris",
+                un jeu classique de Tetris conçu avec C et Raylib. 
+                Plongez dans un monde de blocs en chute et de manœuvres stratégiques 
+                alors que vous visez à effacer des lignes et à accumuler des points.</p>
+            <img src="./media/tetris.gif" alt="Tetris Gameplay"><br>
+            <button onclick="location.href='./projects/tetris/tetris.html'">Exécution en direct</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contactez-moi : Taha.Aitbaissi@emsi-edu.ma</p>
+    </footer>
+
+    <button id="scroll-to-top">Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

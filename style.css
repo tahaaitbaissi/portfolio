@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 355px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent; /* Add border to buttons */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-color: #fff; /* Change border color on hover */
+}
+
+
+main {
+    padding: 20px;
+}
+
+section.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section.project button {   
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Increased padding for a bigger button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+    margin-left: 540px;
+}
+
+section.project button:hover {
+    background-color: #0056b3;
+}
+
+.project img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 300px;
+    align-items: center;
+
+}
+
+.dark-mode section.project {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+#dark-mode-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+    border-color: #fff;
+}
