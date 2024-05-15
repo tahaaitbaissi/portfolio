@@ -29,12 +29,12 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    border: 1px solid transparent; /* Add border to buttons */
+    border: 1px solid transparent;
 }
 
 nav ul li a:hover {
     background-color: #555;
-    border-color: #fff; /* Change border color on hover */
+    border-color: #fff;
 }
 
 
@@ -55,7 +55,7 @@ section.project button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px; /* Increased padding for a bigger button */
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;

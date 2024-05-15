@@ -19,9 +19,6 @@ function login() {
     var username = document.getElementById('loginUsername').value;
     var password = document.getElementById('loginPassword').value;
 
-    
-    // console.log('Login - Username:', username, 'Password:', password);
-
     if (username == '') {
         document.getElementById('s2').innerHTML = 'name must be filled out';
     }
@@ -51,8 +48,6 @@ function signup() {
     var password = document.getElementById('signupPassword').value;
     var flag = 1;
 
-    
-    // console.log('Signup - Username:', username, 'Full Name:', fullName, 'Email:', email, 'Phone:', phone, 'Age:', age, 'Password:', password);
 
     if (username == '') {
         document.getElementById('s3').innerHTML = 'name must be filled out';

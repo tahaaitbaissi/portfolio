@@ -5,7 +5,6 @@ darkModeToggle.addEventListener('click', function() {
     body.classList.toggle('dark-mode');
 });
 
-// Scroll to top button
 const scrollToTopButton = document.getElementById('scroll-to-top');
 
 window.addEventListener('scroll', function() {
