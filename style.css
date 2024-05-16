@@ -12,13 +12,16 @@ header{
     color: #fff;
     padding: 10px 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: 355px;
+    margin-left: auto;
 }
 
 nav ul li {
@@ -42,40 +45,42 @@ main {
     padding: 20px;
 }
 
-section.project {
+.project {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
 }
 
-section.project button {   
+.project button {   
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    margin-top: 20px;
-    margin-left: 540px;
+    
 }
 
-section.project button:hover {
+.project button:hover {
     background-color: #0056b3;
 }
 
 .project img {
     width: 50%;
     border-radius: 10px;
-    margin-left: 300px;
     align-items: center;
-
 }
 
-.dark-mode section.project {
+.dark-mode .project {
     background-color: #444;
     color: #fff;
 }

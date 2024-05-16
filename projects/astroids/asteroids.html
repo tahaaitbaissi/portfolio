@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <style>
-        div {visibility: hidden;}
+        span {visibility: hidden;}
         #canvas {
             margin-left: auto;
             margin-right: auto;
@@ -29,23 +29,84 @@
         .goback-btn:hover {
             background-color: #45a049;
         }
-        </style>
+
+        .description-section {
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .description-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description-text {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .jump-btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .jump-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    
-    <!-- Create the canvas that the C++ code will draw into -->
+
+    <button onclick="goToExecution()" class="jump-btn">Jump to Execution</button>
     <button onclick="goBack()" class="goback-btn">Go Back</button>
+    
+    <section class="description-section">
+        <div class="description-text">
+            <p class="description-title">Asteroids Game Project</p>
+            <p>This project is a recreation of the classic Asteroids game implemented in C using the Raylib library. The game features:</p>
+            <ul>
+                <li>Asteroids splitting into two pieces when hit</li>
+                <li>Player with 5 lives</li>
+                <li>Realistic player movement</li>
+                <li>Management of multiple .c and .h files for code simplicity and readability</li>
+            </ul>
+            <p>Enjoy the nostalgia of the classic Asteroids game with added features and improved gameplay!</p>
+        </div>
+    </section>
+
+
+    <!-- Create the canvas that the C++ code will draw into -->
     <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-    <div>
+    <span>
         {{{ SCRIPT }}}
-    </div>
+    </span>
 
     <!-- Allow the C++ to access the canvas element --> 
     <script type='text/javascript'>
         var Module = {
             canvas: (function() { return document.getElementById('canvas'); })()
         };
+
+        function goToExecution() {
+            window.scrollTo(0,document.body.scrollHeight);
+        }
+
         function goBack() {
             window.history.back();
         }

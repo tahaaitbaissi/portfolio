@@ -18,6 +18,7 @@ function toggleForm() {
 function login() {
     var username = document.getElementById('loginUsername').value;
     var password = document.getElementById('loginPassword').value;
+    var found = 0;
 
     if (username == '') {
         document.getElementById('s2').innerHTML = 'name must be filled out';
@@ -33,10 +34,12 @@ function login() {
         if (users[i].username == user.username && users[i].password == user.password) {
             document.getElementById('s2').innerHTML = 'Login successful';
             window.location.href = "index.html";
+            found = 1;
         }
     }
 
-    document.getElementById('s2').innerHTML = 'password and username do not match';
+    if (!found) 
+        document.getElementById('s2').innerHTML = 'password and username do not match';
 }
 
 function signup() {
